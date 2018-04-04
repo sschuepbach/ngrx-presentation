@@ -1,49 +1,93 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <section data-background-color="#439ac6">
+                <h2>1. Grundlagen</h2>
+            </section>
+            <section>
+                <h3>Zustandskategorien in Webapplikationen</h3>
+                <ul>
+                    <li class="fragment" data-fragment-index="1">Zustand des Servers / Backends</li>
+                    <li class="fragment" data-fragment-index="2"><b>Persistent state</b>
+                        : Subset des <i>server states</i>, gespeichert auf dem Client</li>
+                    <li class="fragment" data-fragment-index="3"><b>Zustand der URL / des Routers</b>: </li>
+                    <li class="fragment" data-fragment-index="4"><b>Client state</b></li>
+                    <li class="fragment" data-fragment-index="5"><b>Transient client state</b></li>
+                    <li class="fragment" data-fragment-index="6"><b>Local UI state</b></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section data-background-color="#439ac6">
+                <h2>2. NgRx: Ein Überblick</h2>
+            </section>
+        </section>
+        <section>
+            <section data-background-color="#439ac6">
+                <h2>3. Store</h2>
+            </section>
+        </section>
+        <section>
+            <section data-background-color="#439ac6">
+                <h2>4. Effects</h2>
+            </section>
+        </section>
+        <section>
+            <section data-background-color="#439ac6">
+                <h2>5. Weitere Extensions</h2>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>6. Testing</h2>
+            </section>
+        </section>
+    </div>
+</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
