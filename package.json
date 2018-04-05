@@ -1,19 +1,17 @@
 {
-  "name": "reveal.js",
+  "name": "NgRx-Praesentation",
   "version": "3.6.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "description": "Eine Präsentation zu den Möglichkeiten von NgRx",
+  "homepage": "https://sschuepbach.github.io/ngrx-presentation",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Sebastian Schüpbach",
+    "email": "sebastian.schuepbach@unibas.ch",
+    "web": "https://annotat.io"
   },
   "repository": {
     "type": "git",
