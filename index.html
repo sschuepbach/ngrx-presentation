@@ -95,27 +95,32 @@
             </section>
             <section>
                 <h3>Schemata</h3>
-                <p>
-                    <code>@ngrx/schematics</code>: <i>Blueprints</i> zur Generierung von NgRx-Bausteinen mit angular-cli
-                </p>
-                <p class="fragment" data-fragment-index="2">Blueprints für:</p>
-                <ul class="fragment" data-fragment-index="2">
-                    <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/action.md">Actions</a></i>
+                <ul>
+                    <li class="fragment" data-fragment-index="1">
+                        <code>@ngrx/schematics</code>: <i>Blueprints</i> zur Generierung von NgRx-Bausteinen mit
+                        angular-cli
                     </li>
-                    <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/container.md">Containers</a></i>
-                    </li>
-                    <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/effect.md">Effects</a></i>
-                    </li>
-                    <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/entity.md">Entities</a></i>
-                    </li>
-                    <li><i><a
-                            href="https://github.com/ngrx/platform/blob/master/docs/schematics/feature.md">Features</a></i>
-                    </li>
-                    <li><i><a
-                            href="https://github.com/ngrx/platform/blob/master/docs/schematics/reducer.md">Reducers</a></i>
-                    </li>
-                    <li><i><a
-                            href="https://github.com/ngrx/platform/blob/master/docs/schematics/store.md">Stores</a></i>
+                    <li class="fragment" data-fragment-index="2">
+                        Blueprints für:
+                        <ul>
+                            <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/action.md">Actions</a></i>
+                            </li>
+                            <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/container.md">Containers</a></i>
+                            </li>
+                            <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/effect.md">Effects</a></i>
+                            </li>
+                            <li><i><a href="https://github.com/ngrx/platform/blob/master/docs/schematics/entity.md">Entities</a></i>
+                            </li>
+                            <li><i><a
+                                    href="https://github.com/ngrx/platform/blob/master/docs/schematics/feature.md">Features</a></i>
+                            </li>
+                            <li><i><a
+                                    href="https://github.com/ngrx/platform/blob/master/docs/schematics/reducer.md">Reducers</a></i>
+                            </li>
+                            <li><i><a
+                                    href="https://github.com/ngrx/platform/blob/master/docs/schematics/store.md">Stores</a></i>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -134,21 +139,27 @@
             <section>
                 <h3>Struktur root-Modul</h3>
                 <ul>
-                    <li class="fragment" data-fragment-index="1"><code>app.module.ts</code>: Ort, wo <i>reducers</i> registriert werden</li>
-                    <li class="fragment" data-fragment-index="2"><code>reducers/index.ts</code>: </li>
+                    <li class="fragment" data-fragment-index="1"><code>app.module.ts</code>: Ort, wo <i> root reducers</i>
+                        registriert werden
+                    </li>
+                    <li class="fragment" data-fragment-index="2"><code>reducers/index.ts</code>: <i>root reducers</i></li>
                 </ul>
             </section>
             <section>
                 <h3>Struktur feature-Modul</h3>
                 <ul>
                     <li class="fragment" data-fragment-index="1"><code>actions</code>: <i>Actions</i>-Verzeichnis</li>
-                    <li class="fragment" data-fragment-index="2"><code>components</code>: Verzeichnis für <i>presentational components</i></li>
-                    <li class="fragment" data-fragment-index="3"><code>containers</code>: Verzeichnis für <i>container components</i></li>
+                    <li class="fragment" data-fragment-index="2"><code>components</code>: Verzeichnis für <i>presentational
+                        components</i></li>
+                    <li class="fragment" data-fragment-index="3"><code>containers</code>: Verzeichnis für <i>container
+                        components</i></li>
                     <li class="fragment" data-fragment-index="4"><code>effects</code>: <i>Effects</i>-Verzeichnis</li>
                     <li class="fragment" data-fragment-index="5"><code>guards</code>: <i>Guards</i>-Verzeichnis</li>
                     <li class="fragment" data-fragment-index="6"><code>models</code>: <i>Models</i>-Verzeichnis</li>
                     <li class="fragment" data-fragment-index="7"><code>reducers</code>: <i>Reducers</i>-Verzeichnis</li>
-                    <li class="fragment" data-fragment-index="8"><code>services</code>: Verzeichnis für services (mit Seiteneffekten)</li>
+                    <li class="fragment" data-fragment-index="8"><code>services</code>: Verzeichnis für services (mit
+                        Seiteneffekten)
+                    </li>
                 </ul>
             </section>
             <section>
@@ -157,22 +168,22 @@
                     <div style="border-right:2px solid white; padding-right:3px">
                         <b>Presentational Components</b>
                         <ul>
-                            <li>Fokus auf Layout</li>
-                            <li>Unten im Komponentenbaum</li>
-                            <li>Daten via <code>@Input()</code></li>
-                            <li>Keine Zustandsmodifikationen</li>
-                            <li>Stellen i.d.R. anderen Komponeten keine Daten zur Verfügung</li>
+                            <li class="fragment" data-fragment-index="1">Fokus auf Layout</li>
+                            <li class="fragment" data-fragment-index="2">Unten im Komponentenbaum</li>
+                            <li class="fragment" data-fragment-index="3">Daten via <code>@Input()</code></li>
+                            <li class="fragment" data-fragment-index="4">Keine Zustandsmodifikationen</li>
+                            <li class="fragment" data-fragment-index="5">Stellen i.d.R. anderen Komponeten keine Daten zur Verfügung</li>
                         </ul>
 
                     </div>
                     <div style="padding-left:3px;">
                         <b>Container Components</b>
                         <ul>
-                            <li>Fokus auf Funktion</li>
-                            <li>Oben im Komponentenbaum</li>
-                            <li>Daten via <code>Store.select()</code></li>
-                            <li>Zustandsmodifikationen</li>
-                            <li>Stellen anderen Komponenten Daten zur Verfügung</li>
+                            <li class="fragment" data-fragment-index="1">Fokus auf Funktion</li>
+                            <li class="fragment" data-fragment-index="2">Oben im Komponentenbaum</li>
+                            <li class="fragment" data-fragment-index="3">Daten via <code>Store.select()</code></li>
+                            <li class="fragment" data-fragment-index="4">Zustandsmodifikationen</li>
+                            <li class="fragment" data-fragment-index="5">Stellen anderen Komponenten Daten zur Verfügung</li>
                         </ul>
                     </div>
                 </div>
@@ -181,6 +192,14 @@
         <section>
             <section data-background-color="#439ac6">
                 <h2>4. Store</h2>
+            </section>
+            <section>
+                <h3>Aufgaben des Store</h3>
+                <ul>
+                    <li>Wrapper für den <i>state</i> der Applikation</li>
+                    <li><code>dispatch()</code>-Funktion zum Auslösen einer <i>action</i></li>
+                    <li><code>select()</code>-Funktion zur Extraktion eines Teils des <i>state</i></li>
+                </ul>
             </section>
         </section>
         <section>
